@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;600&display=swap');
+
+/*   ----- Variables  -----  */
+:root {
+    --navy: rgba(47, 70, 115);
+    --navyAlpha: rgba(47, 70, 115, .9);
+    --purple: rgb(98, 81, 125);
+    --purpleAlpha: rgb(98, 81, 125, .9);
+    --lightBlue: rgb(154, 175, 217);
+    --tan: rgb(242, 239, 233);
+    --tanAlpha: rgb(242, 239, 233, .8);
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background-image: url(/puget-sound-across-whidbey.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--navy);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color: var(--navyAlpha);
+    width: 75%;
+    margin: 0 auto;
+    padding: 13px 26px;
+    border-bottom: 8px solid var(--lightBlue);
+    color: var(--tan);
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+  }
+  main {
+    background-color: var(--tanAlpha);
+    width: 75%;
+    margin: 0 auto;
+    border-top: 8px solid var(--lightBlue);
+    padding: 8px 0;
+    min-height: 50vh;
+  }
+  section {
+    padding-bottom: 13px;
+  }
+  article {
+    margin: 13px;
+    padding: 13px 21px;
+    background-color: var(--tanAlpha);
+  }
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    background-color: var(--navyAlpha);
+    color: var(--tan);
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 8px solid var(--purpleAlpha);
+  }
+  .button-container {
+    background-color: var(--tanAlpha);
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {
+    background-color: var(--tan);
+    color: var(--purple);
+  }
+  a:visited {
+    color: var(--purple);
+  }
+
+  .float-right {
+    align-self: flex-end;
+    margin-top: 13px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align: center;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 13px 0;
+    border-top: 3px solid var(--tan);
+    border-bottom: 3px solid var(--tan);
+  }
+
+  nav.local {
+    width: 100%;
+    padding: 8px 13px;
+    box-sizing: border-box;
+    background-color: var(--navy);
+    justify-content: space-between;
+  }
+
+  nav a {
+    color: var(--tan);
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 1%;
+  }
+  nav.local a {
+    margin: 0 13px;
+  }
+  nav a:visited {
+    color: var(--tan);
+  }
+  nav a:hover {
+    color: var(--purple);
+    background-color: var(--tan);
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  p.collections-info {
+    background-color: var(--tanAlpha);
+    margin: 0;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+  } 
+  h1 {}
+  h2 {
+    font-family: 'Merriweather', serif;
+    padding-left: 26px;
+  }
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  .collections-heading {
+    background-color: var(--tanAlpha);
+    margin: 0;
+    padding: 13px;
+  }
+
+  .gallery h3 {
+    margin-left: 13px;
+  }
+
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {
+    padding: 13px 21px;
+    margin: 3px 0;
+  }
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  p.form-prompt {
+    padding: 13px 21px;
+    background-color: var(--tanAlpha);
+    margin: 0 13px -13px;
+  }
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  caption {
+    background-color: var(--purple);
+    color: var(--tan);
+    padding: 8px 0;
+    line-height: 55px;
+    font-weight: bold;
+    margin: 3px 0;
+  }
+  thead {
+    line-height: 55px;
+  }
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {
+    text-align: left;
+    border-bottom: 1px solid var(--purple);
+    padding: 1%;
+  }
+  th:nth-child(1) {
+    padding-left: 13px;
+  }
+  th:nth-child(2) {
+    padding-left: calc(1% + 5px);
+  }
+  td {
+    border-bottom: 1px solid var(--purple);
+    padding: 1%;
+  }
+  td:nth-child(1) {
+    padding-left: 13px;
+  }
+    td:nth-child(3) {
+      text-align: center;
+    }
+    td:nth-child(6), td:nth-child(7) {
+      width: 34px;
+    }
+  colgroup {}
+  data {}
+  datalist {}
+
+  table label {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px 0;
+  }
+
+  table input {
+    margin: 0 5px;
+    position: relative;
+    top: 5px;
+  }
+  table thead, tbody {
+    background-color: var(--tanAlpha);
+  }
+  
+  
+  /*  ----- Form ----- */
+  form, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+  }
+  form {}
+  fieldset {
+    background-color: var(--lightBlue);
+    color: var(--tan);
+    margin: 13px 0;
+    border: 2px solid var(--navy);
+  }
+    legend {
+      color: var(--navy);
+      background-color: var(--tan);
+      box-shadow: 2px 3px var(--purpleAlpha);
+      border: 1px solid var(--navy);
+      padding: 5px 8px;
+    }
+  label {
+    display: block;
+    margin: 13px 0 3px 0;
+  }
+  button {
+    background-color: var(--purple);
+    color: var(--tanAlpha);
+    border: 2px solid var(--lightBlue);
+    line-height: 34px;
+    padding: 3px 13px;
+    font-weight: bold;
+  }
+  input {
+    font-size: 110%;
+    line-height: 34px;
+  }
+  select {
+    font-size: 120%;
+    width: 61.8%;
+  }
+    optgroup {}
+    option {}
+  textarea {
+    height: 144px;
+    font-size: 110%;
+    width: 61.8%;
+  }
+  output {}
+  meter {}
+  progress {}
+
+  *:required {
+    border: 2px solid var(--purple);
+  }
+
+  input[type=text], input[type=email] {
+    width: 61.8%;
+  }
+
+  input[type=number] {
+    width: 89px;
+  }
+
+  .requiredStar {
+    color: red;
+  }
+
+  button:hover {
+    background-color: var(--lightBlue);
+    color: var(--purple);
+    border: 2px solid var(--navy);
+    cursor: pointer;
+  }
+
+  label[for=submit] {
+    display: inline-block;
+  }
+  
+  
+  /* ----- Media ----- */
+  figure {
+
+  }
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  header img {
+    max-width: 75px;
+    margin-right: 21px;
+  }
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery figure {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--lightBlue);
+    margin: 13px auto;
+    padding: 1%;
+    width: 30%;
+    background-color: var(--tan);
+    box-sizing: border-box;
+  }
+  
+  .gallery figcaption {
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-bottom: 3px solid var(--purpleAlpha);
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+
+  .align-right {
+    text-align: right;
+  }
+
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {
+    header {
+      width: 70%;
+    }
+
+    header h1 {
+      font-size: 34px;
+    }
+
+    nav {
+      width: 70%;
+    }
+
+    main {
+      width: 70%;
+    }
+
+    .gallery figcaption {
+      font-size: 13px;
+    }
+
+    footer {
+      width: 70%;
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    th, td {
+      font-size: 12px;
+    }
+  }
+
+  @media all and (max-width: 850px) {
+    .gallery figure {
+      width: 45%;
+    }
+
+    header {
+      width: 75%;
+    }
+
+    nav {
+      width: 75%;
+    }
+
+    main {
+      width: 75%;
+    }
+
+    input[type=text], input[type=email], textarea, select {
+      width: calc(100% - 13px);
+    }
+
+    footer {
+      width: 75%;
+    }
+
+  }
+
+  @media all and (max-width: 600px) {
+    header {
+      width: 90%;
+    }
+
+    nav {
+      width: 90%;
+    }
+
+    nav.local a {
+      margin: 0 1%;
+    }
+
+    main {
+      width: 90%;
+    }
+
+    footer {
+      width: 90%;
+    }
+
+    header h1 img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+
+    .gallery figure {
+      width: 80%;
+    }
+
+  }
+
+  @media all and (max-width: 391px) {
+    header {
+      width: 95%;
+    }
+
+    header h1 {
+      font-size: 21px;
+    }
+
+    header h1 img {
+      max-width: 55px;
+    }
+
+    nav {
+      width: 95%;
+    }
+
+    main {
+      width: 95%;
+    }
+
+    footer {
+      width: 95%;
+    }
+  }
+
+
+  @media all and (max-width: 391px) {
+    nav.local a {
+      font-size: 13px;
+    }
+  }
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  
