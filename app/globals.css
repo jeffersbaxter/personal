@@ -139,8 +139,16 @@
     flex-direction: column;
   }
   br {}
-  ol, ul, dl {}
-  li {}
+  ol, ul, dl {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    color: var(--navyAlpha);
+  }
+  li a {
+    text-decoration: none;
+  }
   dt {}
   dd {}
   
@@ -151,6 +159,9 @@
   h2 {
     font-family: 'Merriweather', serif;
     padding-left: 26px;
+  }
+  h2.remove-pd {
+    padding: 0;
   }
   h3 {}
   h4 {}
@@ -389,6 +400,10 @@
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  .pd-13 {
+    padding: 13px;
   }
   /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
   .floatright {}
