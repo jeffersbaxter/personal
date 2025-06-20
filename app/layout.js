@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           </header>
          <nav>
            <Link href="/resume">Resume</Link>
-           <Link href="/contact">Contact</Link>
+           <Link href="/media">Media</Link>
          </nav>
         <CustomMDXProvider>
           <main>{children}</main>
