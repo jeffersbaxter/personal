@@ -29,7 +29,6 @@ export default function RootLayout({ children }) {
           </header>
          <nav>
            <Link href="/resume">Resume</Link>
-           <Link href="/blog">Blog</Link>
            <Link href="/contact">Contact</Link>
          </nav>
         <CustomMDXProvider>
