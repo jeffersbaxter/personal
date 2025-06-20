@@ -1,7 +1,7 @@
 export default function ResumePage() {
   return (
     <div>
-      <h2 className="text-3xl font-bold mb-8">Jeffers' Resume</h2>
+      <h2 className="text-3xl font-bold mb-8">Jeffers&apos; Resume</h2>
       <section>
         <article>
             <div className='flex jc-sb'>
@@ -71,7 +71,7 @@ export default function ResumePage() {
             <h3>Education</h3>
             <div>
                 <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
-                    <span className='fw-700'>Bachelor's of Science in Computer Science, </span>
+                    <span className='fw-700'>Bachelor&apos;s of Science in Computer Science, </span>
                     <span className='fw-300 pd-0-8'>Oregon State University, </span>
                     <span className='fw-300 fs-italic'>2023 - 2026</span>
                 </div>
@@ -86,7 +86,7 @@ export default function ResumePage() {
             </div>
             <div>
                 <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
-                    <span className='fw-700'>Bachelor's of Arts in Communication, </span>
+                    <span className='fw-700'>Bachelor&apos;s of Arts in Communication, </span>
                     <span className='fw-300 pd-0-8'>Washington State University, </span>
                     <span className='fw-300 fs-italic'>2009 - 2013</span>
                 </div>
