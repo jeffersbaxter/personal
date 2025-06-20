@@ -1,5 +1,9 @@
+import { redirect } from 'next/navigation';
 
 export default function Home() {
+
+  redirect('/resume')
+
   return (
     <>
       <h2>Home</h2>
