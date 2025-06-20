@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap&family=Poppins:wght@300;600&display=swap');
 
 /*   ----- Variables  -----  */
 :root {
@@ -140,7 +140,7 @@
   }
   br {}
   ol, ul, dl {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding-left: 0;
   }
   li {
@@ -154,6 +154,7 @@
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
+    font-weight: 700;
   } 
   h1 {}
   h2 {
@@ -404,6 +405,48 @@
 
   .pd-13 {
     padding: 13px;
+  }
+
+  .pd-l-13 {
+    padding-left: 13px;
+  }
+
+  .pd-l-21 {
+    padding-left: 21px;
+  }
+
+  .pd-l-34 {
+    padding-left: 34px;
+  }
+  .pd-0-8 {
+    padding: 0 8px;
+  }
+  .mg-21-0 {
+    margin: 21px 0;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .jc-sb {
+    justify-content: space-between;
+  }
+  .merriweather {
+    font-family: 'Merriweather', serif;
+  }
+  .fw-700 {
+    font-weight: 700;
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  .fs-italic {
+    font-style: italic;
   }
   /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
   .floatright {}
