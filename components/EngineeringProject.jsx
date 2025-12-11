@@ -8,26 +8,29 @@ export default function EngineeringProject({
   description, 
   imageSrc,
   projectUrl,
+  skills,
   imageAlt = 'Project image'
 }) {
   return (
     <div className="mx-auto max-w-6xl p-6">
+      <article>
       <div className="overflow-hidden rounded-lg bg-white p-8 shadow-lg">
         {/* Project Title - Full Width */}
         <Link 
           href={projectUrl}
           className="mb-6 block transition-colors"
         >
-          <h3>
+          <h3 className='mgb-3'>
             {title}
           </h3>
+          <p className='fs-italic mgb-3 text-10'>{projectUrl}</p>
         </Link>
         
         {/* Description (Left) and Image (Right) */}
         <div className="flex gap-8">
           {/* Description */}
           <div className="flex-1">
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-13 pd-r-13 leading-relaxed text-gray-700">
               {description}
             </p>
           </div>
@@ -43,7 +46,19 @@ export default function EngineeringProject({
             />
           </div>
         </div>
+        <div className='mgt-13'>
+            {/* <span>Skills:</span> */}
+            <ul className='no-type text-13 flex'>
+                <li>Skills: </li>
+                {skills.map((skill, index) => (
+                    <li key={`${skill}_${index}`} className='pd-0-8'>
+                        {skill}
+                    </li>
+                ))}
+            </ul>
+        </div>
       </div>
+      </article>
     </div>
   );
 }
