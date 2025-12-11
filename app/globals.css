@@ -486,6 +486,72 @@
   .text-13 {
     font-size: 13px;
   }
+
+  /* ProjectCard.css */
+
+  .project-card-wrapper {
+    display: flex;
+    background-color: var(--tanAlpha);
+    padding: 2rem;
+  }
+
+  .project-card {
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .project-card-image {
+    position: absolute;
+    inset: 0;
+    transition: transform 700ms ease-out;
+    transform: scale(1);
+  }
+
+  .project-card-image.hovered {
+    transform: scale(1.15);
+  }
+
+  .project-card-image .image {
+    object-fit: cover;
+  }
+
+  .project-card-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--navy);
+    opacity: 0.7;
+    transition: opacity 500ms ease-out;
+  }
+
+  .project-card-overlay.hovered {
+    opacity: 0;
+  }
+
+  .project-card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-card-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1.5rem;
+    font-size: 1.875rem;
+    transition: font-size 500ms ease-out;
+  }
+
+  .project-card-title.hovered {
+    font-size: 2.5rem;
+    color: var(--purple);
+  }
   /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
   .floatright {}
   .floatleft {}
