@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
          <nav>
            <Link href="/resume">Resume</Link>
            <Link href="/media">Media</Link>
+           <Link href="/projects">Projects</Link>
          </nav>
         <CustomMDXProvider>
           <main>{children}</main>

@@ -83,6 +83,10 @@
     color: var(--purple);
   }
 
+  a {
+    color: var(--navy);
+  }
+
   .float-right {
     align-self: flex-end;
     margin-top: 13px;
@@ -142,6 +146,9 @@
   ol, ul, dl {
     /* list-style-type: none; */
     padding-left: 0;
+  }
+  ul.no-type {
+    list-style-type: none;
   }
   li {
     color: var(--navyAlpha);
@@ -447,6 +454,12 @@
   }
   .fs-italic {
     font-style: italic;
+  }
+  .project-img-container {
+    position: relative;
+    height: 155px;
+    width: 250px;
+    flex-shrink: 0;
   }
   /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
   .floatright {}
