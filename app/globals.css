@@ -418,6 +418,10 @@
     padding-left: 13px;
   }
 
+  .pd-r-13 {
+    padding-right: 13px;
+  }
+
   .pd-l-21 {
     padding-left: 21px;
   }
@@ -430,6 +434,21 @@
   }
   .mg-21-0 {
     margin: 21px 0;
+  }
+  .mgb-3 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+  }
+  .mgt-13 {
+    margin-top: 13px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .mg-0 {
+    margin: 0;
   }
 
   .flex {
@@ -460,6 +479,12 @@
     height: 155px;
     width: 250px;
     flex-shrink: 0;
+  }
+  .text-10 {
+    font-size: 10px;
+  }
+  .text-13 {
+    font-size: 13px;
   }
   /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
   .floatright {}
