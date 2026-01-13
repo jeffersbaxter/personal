@@ -19,21 +19,6 @@ export default function ResumePage() {
             <h3>Experience</h3>
             <div>
                 <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
-                    <span className='fw-700'>Teaching Assistant, </span>
-                    <span className='fw-300 pd-0-8'>Oregon State University, </span>
-                    <span className='fw-300 fs-italic'>2024</span>
-                </div>
-                <ul className='pd-l-34'>
-                    <li>
-                        Held office hours to teach React, JavaScript, Assembly, binary conversion and MongoDB to students.
-                    </li>
-                    <li>
-                        Graded more than 30, full-stack assignments each week
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
                     <span className='fw-700'>Sole Proprietor, </span>
                     <span className='fw-300 pd-0-8'>In Basic Terms, </span>
                     <span className='fw-300 fs-italic'>2022 - Present</span>
@@ -47,6 +32,36 @@ export default function ResumePage() {
                     </li>
                     <li>
                         Teaching cost-effective classes on software engineering around western Washington
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
+                    <span className='fw-700'>STEM Instructor, </span>
+                    <span className='fw-300 pd-0-8'>Stemtree, </span>
+                    <span className='fw-300 fs-italic'>2025</span>
+                </div>
+                <ul className='pd-l-34'>
+                    <li>
+                        Taught STEM classes to students with ages from Kindergarten to Fifth grade.
+                    </li>
+                    <li>
+                        Adapted lessons to the ability and communication needs of each student.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div className='flex flex-wrap mg-21-0 merriweather pd-l-13'>
+                    <span className='fw-700'>Teaching Assistant, </span>
+                    <span className='fw-300 pd-0-8'>Oregon State University, </span>
+                    <span className='fw-300 fs-italic'>2024</span>
+                </div>
+                <ul className='pd-l-34'>
+                    <li>
+                        Held office hours to teach React, JavaScript, Assembly, binary conversion and MongoDB to students.
+                    </li>
+                    <li>
+                        Graded more than 30, full-stack assignments each week
                     </li>
                 </ul>
             </div>
